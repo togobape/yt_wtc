@@ -13,8 +13,8 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--start-maximized")
 chrome_options.headless=True
 
-# browser = webdriver.Chrome(options=chrome_options)
-browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+browser = webdriver.Chrome(options=chrome_options)
+# browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
 wait = WebDriverWait(browser, 20)
 
